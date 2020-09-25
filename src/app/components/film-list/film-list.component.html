@@ -1,0 +1,7 @@
+<div class="list">
+  <h2>{{label}}</h2>
+  <app-film-item  *ngFor="let film of films"
+                  [film]="film"
+                  (select)="select.emit($event)">
+  </app-film-item>
+</div>
